@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <aside>
-        
-    </aside>
-    <main>
-
-    </main>
+    <div id="layout">
+        <aside>
+            <div class="side-option">
+                <label for="color-picker">Pick A Color</label>
+                <input type="color" id="color-picker" />
+            </div>
+            <div class="side-option">
+                <label for="color-picker">Aspect Ratio</label>
+                <input type="number" id="aspect-width" placeholder="Width" min="1" max="100" value="16"/>
+                <input type="number" id="aspect-height" disabled placeholder="Height" min="1" max="100"/>
+            </div>
+            <div class="side-option">
+                <button>Black</button>
+            </div>
+            <div class="side-option">
+                <button>Eraser</button>
+            </div>
+            <div class="side-option">
+                <button>Clear</button>
+            </div>
+        </aside>
+        <main>
+            <div id="container">
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
