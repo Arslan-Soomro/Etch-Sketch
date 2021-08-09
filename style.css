@@ -124,3 +124,8 @@ main{
     outline: 1px solid rgb(196, 196, 196);
 }
 
+@media (max-width: 900px){
+    :root{
+        font-size: 12px;
+    }
+}
